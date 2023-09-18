@@ -1,0 +1,36 @@
+.tabContainer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.tabHeader {
+    background-color: #f3f0f8;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tabTitle {
+    border: #b6acc7 1px solid;
+    width: 100%;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+.tabTitle:hover {
+    background-color: #ddd3ef;
+}
+.tabTitle:first-child {
+    border-radius: 0%;
+    border-top-left-radius: 8px;
+}
+.tabTitle:last-child {
+    border-radius: 0%;
+    border-top-right-radius: 8px;
+}
+.tabHeader > .active {
+    background-color: #b6acc7;
+    border: #b6acc7;
+}
+
+.tabContent {
+
+}
