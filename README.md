@@ -10,7 +10,7 @@ Hi Fellow Developers, Myself **_Deepanshu Jain_**
     With hands-on experience in these technologies and more, I bring a comprehensive understanding of the development process and an ability to leverage cutting-edge tools to deliver exceptional results.
 
 # Features of this project
-1. Multiple User profiles, authentication, and authorization.
+1. Multiple User profiles, authentication, and authorization via Backend.
 3. Each User can create events that can be seen by the creator/owner User only.
 4. The password of each user is stored in hashed form in the database.
 5. Using a logger `morgan`, to display logs on each API request on the console and a particular log file.
@@ -20,10 +20,10 @@ Hi Fellow Developers, Myself **_Deepanshu Jain_**
 9. Separate routes to create new **Events** and get all **Events**.
 10. Separate route for signup and login operations for **Users**.
 11. Simple UI with a login page, list all events page and create a new event modal with button.
-12. Created Many robust flexible Custom Hooks and Component to support multiple use cases.
+12. Created multiple robust-flexible Custom Hooks and Component UI components to support multiple use cases.
 13. File upload input in the Create New Event screen (As of now we are not saving that file anywhere).
-14. Fully responsive with mobile (max 640), medium and large viewport ( kind of created our own component library for reusing the same components at multiple places and to support multiple use cases ).
-15. Interactive Form if possible should try to play with the form ( Not the best but yeah it's ok ).
+14. Fully responsive with mobile (max 640), medium and large viewports/screens ( kind of created our own component library for reusing the same components at multiple places and to support multiple use cases ).
+15. Interactive Form if possible should try to play with the form ( Not the best but it's ok ).
 
 # Things that can be improved in this project
 1. A message Modal to display error and successful messages in Frontend for better UX.
