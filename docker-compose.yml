@@ -6,14 +6,14 @@ services:
       dockerfile: Dockerfile
     ports:
       - 5000:5000
-    # env_file:
-    #   - ../.backend.env
+    env_file:
+      - ../.backend.env
   frontend_reactjs:
     build: 
       context: ./frontend
       dockerfile: Dockerfile
     ports:
       - 3000:3000
-    # env_file:
-    #   - ../.frontend.env
+    env_file:
+      - ../.frontend.env
     
