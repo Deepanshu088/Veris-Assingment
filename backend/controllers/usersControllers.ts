@@ -32,7 +32,7 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
         return next(new HttpError('Could not save your credentials. Try again later', 500));
     }
 
-    const newUser: UserType & { password: any } = new User({
+    const newUser = new User({
         name: name,
         email: email,
         password: hashedPassword,
@@ -74,7 +74,7 @@ export const login = async (req: Request, res: Response, next: NextFunction) => 
     }
     let isValidPassword = false;
     try {
-        isValidPassword = await bcrypt.compare(password, existingUser.password);
+        isValidPassword = await bcrypt.compare(password, existingUser.password as string);
     } catch (e) {
         return next(new HttpError('Couldnt log you in. Please try again.', 500));
     }

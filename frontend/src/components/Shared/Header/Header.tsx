@@ -7,7 +7,7 @@ import { logout } from "../../../redux/slices/user/userSlice";
 const Header = () => {
     const isLoggedIn = useSelector((state:any) => state.userData.isLoggedIn);
     const dispatch = useDispatch();
-    const [showModal, setShowModal] = useState(true);
+    const [showModal, setShowModal] = useState(false);
 
     function logoutHandler() {
         dispatch(logout());

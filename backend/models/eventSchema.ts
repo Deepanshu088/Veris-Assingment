@@ -1,7 +1,7 @@
 import mongoose, { Document, ObjectId } from 'mongoose';
 
 export interface EventType extends Document {
-    id: string;
+    id: ObjectId;
     title: string;
     description?: string;
     startTime: Date;
@@ -13,7 +13,7 @@ export interface EventType extends Document {
     creatorId: ObjectId;
 }
 
-const eventSchema = new mongoose.Schema<EventType>({
+const eventSchema = new mongoose.Schema({
     title : { type: String, required: true },
     description : { type: String },
     startTime : { type: Date, required: true },
@@ -39,4 +39,4 @@ eventSchema.set('toJSON', {
 });
 
 
-export default mongoose.model('Event', eventSchema);
+export default mongoose.model<EventType>('Event', eventSchema);

@@ -3,10 +3,10 @@ import mongoose, { Document } from 'mongoose';
 export interface UserType extends Document {
     email: string;
     name: string;
-    password: string;
+    password: string | undefined;
 }
 
-const userSchema = new mongoose.Schema<UserType>({
+const userSchema = new mongoose.Schema({
     email: { type: String, required: true, unique: true },
     name: { type: String , required: true},
     password: { type: String, required: true }
@@ -25,4 +25,4 @@ userSchema.set('toJSON', {
 });
 
 
-export default mongoose.model('User', userSchema);
+export default mongoose.model<UserType>('User', userSchema);
