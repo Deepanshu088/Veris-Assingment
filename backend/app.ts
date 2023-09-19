@@ -17,16 +17,13 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // MongoDB Connection
-mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.iu28p.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.iu28p.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
     console.log("Connected to Database :)");
 });
 
-// // Middlewares
-mongoose.set('useFindAndModify', false);
-mongoose.set('useCreateIndex', true);
 
 app.use(bodyParser.json());
 
