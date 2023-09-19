@@ -9,6 +9,17 @@ Hi Fellow Developers, Myself **_Deepanshu Jain_**
     Cloud Services: AWS EC2, SES, Lambda, Cognito, Amplify, Elastic Beanstalk, API Gateway, Docker, CI/CD Pipelines
     With hands-on experience in these technologies and more, I bring a comprehensive understanding of the development process and an ability to leverage cutting-edge tools to deliver exceptional results.
 
+**Prerequisites**
+Install Docker and Docker Compose on your system.
+
+**Running Project**
+1. Clone the repository.
+2. Make sure to checkout to `development` branch.
+3. In the project root directory, run the following command.
+       `docker compose up --build`
+4. Open your browser and redirect to `http://localhost:5000/`
+5. Play around with this project.
+
 # Features of this project
 1. Multiple User profiles, authentication, and authorization via Backend.
 3. Each User can create events that can be seen by the creator/owner User only.
@@ -24,6 +35,7 @@ Hi Fellow Developers, Myself **_Deepanshu Jain_**
 13. File upload input in the Create New Event screen (As of now we are not saving that file anywhere).
 14. Fully responsive with mobile (max 640), medium and large viewports/screens ( kind of created our own component library for reusing the same components at multiple places and to support multiple use cases ).
 15. Interactive Form if possible should try to play with the form ( Not the best but it's ok ).
+16. **Fully Automatic CI/CD Pipeline** for deployment for build, test and deploy both frontend and backend using **Docker** and **Jenkins**.
 
 # Things that can be improved in this project
 1. A message Modal to display error and successful messages in Frontend for better UX.
