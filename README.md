@@ -19,8 +19,10 @@ Hi Fellow Developers, Myself **_Deepanshu Jain_**
 8. We are using `JWT tokens` for authentication and authorization.
 9. Separate routes to create new **Events** and get all **Events**.
 10. Separate route for signup and login operations for **Users**.
-11. Simple UI with a login page, list all events page and create a new events page.
+11. Simple UI with a login page, list all events page and create a new event modal with button.
 12. Created Custom Hooks and Many robust Component flexible to support multiple use cases.
+13. File upload input in the Create New Event screen.
+14. Fully responsive with mobile (max 640), medium and large viewport.
 
 # Things that can be improved in this project
 2. More flexibility and customization with event management can be done.
