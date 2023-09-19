@@ -9,10 +9,10 @@ Hi Fellow Developers, Myself **_Deepanshu Jain_**
     Cloud Services: AWS EC2, SES, Lambda, Cognito, Amplify, Elastic Beanstalk, API Gateway, Docker, CI/CD Pipelines
     With hands-on experience in these technologies and more, I bring a comprehensive understanding of the development process and an ability to leverage cutting-edge tools to deliver exceptional results.
 
-#Prerequisites
+# Prerequisites
 Install Docker and Docker Compose on your system.
 
-#Running Project
+# Running Project
 1. Clone the repository.
 2. Make sure to checkout to `development` branch.
 3. In the project root directory, run the following command.
