@@ -11,6 +11,8 @@ COPY package*.json ./
 COPY tsconfig.json ./
 
 RUN npm install
+RUN npm install -g ts-node
+RUN npm install -g nodemon
 
 # copy source code to /app/src folder
 COPY . .
